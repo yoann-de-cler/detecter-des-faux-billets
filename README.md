@@ -21,7 +21,15 @@ Développer un modèle prédictif permettant d'identifier les faux billets
 ---
 
 ## Visuels
+![Boxplot des variables explicatives par classe](images/boxplot_variables_explicatives_par_classe.png)
 
+![Evaluation du modèle de regression logistique](images/evaluation_modele_regression_logistique.png)
+
+![Validation des modèles](validation_modeles.png)
+
+![Application](application.png)
+
+---
 
 ## 🛠️ Outils
 
