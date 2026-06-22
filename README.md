@@ -8,25 +8,21 @@ Développer un modèle prédictif permettant d'identifier les faux billets
 ## 🧠 Travail réalisé
 
 - Analyse exploratoire des données (EDA)
+![Boxplot des variables explicatives par classe](images/boxplot_variables_explicatives_par_classe.png)
+
 - Visualisation et interprétation statistique
 - Traitement des valeurs manquantes
 - Analyse des corrélations (Pearson / Spearman)
 - Détection et gestion de la multicolinéarité (VIF)
 - Préparation des données pour la modélisation
 - Construction et comparaison de modèles de machine learning
-- Sélection du modèle le plus performant
-- Évaluation des performances (accuracy, précision, rappel)
-- Sauvegarde et industrialisation du modèle (pickle)
-
----
-
-## Visuels
-![Boxplot des variables explicatives par classe](images/boxplot_variables_explicatives_par_classe.png)
-
 ![Evaluation du modèle de regression logistique](images/evaluation_modele_regression_logistique.png)
 
+- Sélection du modèle le plus performant
 ![Validation des modèles](validation_modeles.png)
 
+- Évaluation des performances (accuracy, précision, rappel)
+- Sauvegarde et industrialisation du modèle (pickle)
 ![Application](application.png)
 
 ---
