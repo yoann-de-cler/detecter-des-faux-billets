@@ -19,11 +19,11 @@ Développer un modèle prédictif permettant d'identifier les faux billets
 ![Evaluation du modèle de regression logistique](images/evaluation_modele_regression_logistique.png)
 
 - Sélection du modèle le plus performant
-![Validation des modèles](validation_modeles.png)
+![Validation des modèles](images/validation_modeles.png)
 
 - Évaluation des performances (accuracy, précision, rappel)
 - Sauvegarde et industrialisation du modèle (pickle)
-![Application](application.png)
+![Application](images/application.png)
 
 ---
 
