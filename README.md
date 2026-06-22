@@ -23,7 +23,7 @@ Développer un modèle prédictif permettant d'identifier les faux billets
 
 - Évaluation des performances (accuracy, précision, rappel)
 - Sauvegarde et industrialisation du modèle (pickle)
-![Application](images/application.png)
+<img src="images/confusion_matrix.png" width="500">
 
 ---
 
