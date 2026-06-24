@@ -15,7 +15,7 @@ Les données contiennent des mesures physiques de billets :
 
 ## 🧹 Préparation des données
 - Analyse exploratoire (distributions, corrélations)
-![Boxplot de la distribution des variables explicatives sur la varibale cible](images/boxplot_variables_explicatives_par_classe.png)
+![Boxplot de la distribution des variables explicatives sur la variable cible](images/boxplot_variables_explicatives_par_classe.png)
 - Traitement des valeurs manquantes (imputation via régression)
 - Détection des outliers
 - Standardisation des variables
