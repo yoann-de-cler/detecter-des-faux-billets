@@ -1,48 +1,74 @@
 # 🤖 Détection de faux billets – Machine Learning
 
 ## 🎯 Objectif
-Développer un modèle prédictif permettant d'identifier les faux billets
+Construire un modèle de machine learning capable de détecter automatiquement les faux billets à partir de leurs caractéristiques physiques.
 
 ---
 
-## 🧠 Travail réalisé
-
-- Analyse exploratoire des données (EDA)
-![Boxplot des variables explicatives par classe](images/boxplot_variables_explicatives_par_classe.png)
-
-- Visualisation et interprétation statistique
-- Traitement des valeurs manquantes
-- Analyse des corrélations (Pearson / Spearman)
-- Détection et gestion de la multicolinéarité (VIF)
-- Préparation des données pour la modélisation
-- Construction et comparaison de modèles de machine learning
-![Evaluation du modèle de regression logistique](images/evaluation_modele_regression_logistique.png)
-
-- Sélection du modèle le plus performant
-![Validation des modèles](images/validation_modeles.png)
-
-- Évaluation des performances (accuracy, précision, rappel)
-- Sauvegarde et industrialisation du modèle (pickle)
-<img src="images/application.png" width="500">
+## 📊 Données
+Les données contiennent des mesures physiques de billets :
+- dimensions (longueur, hauteur, diagonale)
+- marges (haut, bas, gauche, droite)
+- variable cible : billet authentique ou faux
 
 ---
 
-## 🛠️ Outils
+## 🧹 Préparation des données
+- Analyse exploratoire (distributions, corrélations)
+![Boxplot de la distribution des variables explicatives sur la varibale cible](boxplot_variables_explicatives_par_classe.png)
+- Traitement des valeurs manquantes (imputation via régression)
+- Détection des outliers
+- Standardisation des variables
+- Séparation train / test
 
-- Python (Pandas, NumPy)
+---
+
+## 🤖 Modélisation
+Plusieurs algorithmes ont été testés et comparés :
+- Régression logistique
+![Regression logistique](evaluation_modele_regression_logistique.png)
+- K-Nearest Neighbors
+- Random Forest
+- K-means (analyse exploratoire non supervisée)
+
+---
+
+## 📈 Évaluation
+Les modèles ont été évalués via :
+- Accuracy
+- Precision / Recall / F1-score
+- ROC AUC
+- Matrices de confusion
+- Validation croisée
+![Validation des modèles](validation_modeles.png)
+
+---
+
+## 🏆 Résultat
+- Les classes sont fortement séparables dans l’espace des variables
+- Les modèles supervisés obtiennent de très bonnes performances
+- La régression logistique est retenue pour sa simplicité et son interprétabilité
+- Un pipeline complet permet de reproduire les prédictions en production
+
+---
+
+## 🚀 Industrialisation
+Le modèle final est encapsulé dans un pipeline :
+- imputation des valeurs manquantes
+- standardisation
+- modèle de classification
+
+Le pipeline est sauvegardé et réutilisable via `joblib`.
+
+---
+
+## 🛠️ Stack technique
+- Python
+- Pandas / NumPy
 - Scikit-learn
+- Statsmodels
 - Matplotlib / Seaborn
-- Statsmodels (VIF)
-- Pickle
-
----
-
-## 📈 Résultats
-
-- Modèle prédictif entraîné et validé sur les données
-- Identification des variables les plus discriminantes
-- Pipeline complet de data science : exploration → préparation → modélisation → évaluation → industrialisation
-- Modèle réutilisable via sérialisation (pickle)
+- Joblib
 
 ---
 
