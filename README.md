@@ -15,7 +15,7 @@ Les données contiennent des mesures physiques de billets :
 
 ## 🧹 Préparation des données
 - Analyse exploratoire (distributions, corrélations)
-![Boxplot de la distribution des variables explicatives sur la varibale cible](boxplot_variables_explicatives_par_classe.png)
+![Boxplot de la distribution des variables explicatives sur la varibale cible](images/boxplot_variables_explicatives_par_classe.png)
 - Traitement des valeurs manquantes (imputation via régression)
 - Détection des outliers
 - Standardisation des variables
@@ -26,7 +26,7 @@ Les données contiennent des mesures physiques de billets :
 ## 🤖 Modélisation
 Plusieurs algorithmes ont été testés et comparés :
 - Régression logistique
-![Regression logistique](evaluation_modele_regression_logistique.png)
+![Regression logistique](images/evaluation_modele_regression_logistique.png)
 - K-Nearest Neighbors
 - Random Forest
 - K-means (analyse exploratoire non supervisée)
@@ -40,7 +40,7 @@ Les modèles ont été évalués via :
 - ROC AUC
 - Matrices de confusion
 - Validation croisée
-![Validation des modèles](validation_modeles.png)
+![Validation des modèles](images/validation_modeles.png)
 
 ---
 
